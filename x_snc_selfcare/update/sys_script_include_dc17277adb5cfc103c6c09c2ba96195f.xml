@@ -13,6 +13,7 @@
 	var RenderValue = x_snc_devtools.RenderValue;
 	var RunScriptInGlobalScope = x_snc_devtools.RunScriptInGlobalScope;
 	var GlideRecordQuery = x_snc_devtools.GlideRecordQuery;
+	var GlideRecordInsert = x_snc_devtools.GlideRecordInsert;
 	var RenderDateTime = x_snc_devtools.RenderDateTime;
 	var GetKeys = x_snc_devtools.GetKeys;
 	var GetStringValue = x_snc_devtools.GetStringValue;
@@ -53,15 +54,43 @@
 		patterns[strPatternHash] = Clone(grSysLog);
 	}
 	
+	Debug(RenderValue(patterns));
+	
 	// 2. Create incidents
 	var aPatternHash = GetKeys(patterns);
 	for (var nPattern = 0; nPattern < aPatternHash.length; nPattern++)
 	{
-		Debug(RenderValue(patterns[aPatternHash[nPattern]]));
+		var strPatternHash = aPatternHash[nPattern];
+		
+		var grIncident = new GlideRecord('incident');
+		grIncident.addQuery('x_snc_selfcare_pattern_hash','=',strPatternHash);
+		grIncident.query();
+		if (grIncident.next() == false)
+		{
+			var pattern = patterns[strPatternHash];
+			
+			var grIncident = new GlideRecord('incident');
+			grIncident.initialize();
+			grIncident.x_snc_selfcare_pattern_hash = strPatternHash;
+			grIncident.short_description = 'SelfCare: Evaluator error detected.';
+			grIncident.description = 
+				"The following error has been logged by the evaluator:\n"
+				+pattern['message']+"\n";
+				+"\n"
+				+"Refer to "+x_snc_devtools.GetInstanceURL()+"\n";
+			GlideRecordInsert(grIncident);
+			Debug('Added new incident for pattern hash "'+strPatternHash+'".');
+
+		}
+		else
+		{
+			Debug('Incident '+grIncident.number+' with pattern hash "'+strPatternHash+'" already exists. Do nothing.');
+		}
+		
+		//Debug(RenderValue(patterns[strPatternHash]));
 	}
 	
 	
-	Debug(RenderValue(patterns));
 	
 	Debug('END');
 	
@@ -71,13 +100,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-27 15:47:13</sys_created_on>
         <sys_id>dc17277adb5cfc103c6c09c2ba96195f</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>ExecuteLogScan</sys_name>
         <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_script_include_dc17277adb5cfc103c6c09c2ba96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-27 17:13:28</sys_updated_on>
+        <sys_updated_on>2021-09-07 15:47:00</sys_updated_on>
     </sys_script_include>
 </record_update>
