@@ -6,7 +6,7 @@
         <conditional>false</conditional>
         <entered_time>1970-01-01 00:00:00</entered_time>
         <name>SelfCare - Log Scan</name>
-        <run_as display_value="Sascha Wildgrube">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
