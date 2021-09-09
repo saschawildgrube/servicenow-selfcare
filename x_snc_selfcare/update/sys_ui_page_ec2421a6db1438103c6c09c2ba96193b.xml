@@ -45,25 +45,18 @@
 				'SelfCare',
 				'https://github.com/saschawildgrube/servicenow-selfcare');
 		]</g2:no_escape>
-		<li>TODO</li>
-<!--		<li>Run the&#160;<a href="/sys_atf_test_suite.do?sys_id=4a8550391b5b8850a89720a8ec4bcbd9&amp;sysparm_view=DevTools&amp;sysparm_view_forced=true" target="_blank">DevTools Test Suite</a></li>
+		<li>Configure the technical user to run the schedule job "SelfCare - Log Scan" if required.</li>
+		<li>Configure the default assignment_group to be set when incidents are created.</li>
+		<li>Run the&#160;<a href="/sys_atf_test_suite.do?sys_id=2bd6d5e6db1038103c6c09c2ba96193e&amp;sysparm_view=DevTools&amp;sysparm_view_forced=true" target="_blank">SelfCare Test Suite</a></li>
 		<li>In case of errors:
 			<ol>
-				<li>Tests "DevTools - GetGroupsFromUser" and "DevTools - TestDataAPI": Retry after a few minutes. Some cross-scrope privileges will be set up during the first test run and might take a few minutes to be effective.</li>
-				<li>Test "DevTools - TestDataAPI": This script creates various records (e.g. incidents and problems). If there are customizations in place that make additional fields mandatory, you may have to set up business rules to set these values - but only if the short description (or the corresponding field) starts with "_ATF_".</li>
+				<li>If incidents cannot be created, you may have to setup additional business rules to populate required fields.</li>
 			</ol>
 		</li>
--->
 	</ol>
 	
-	<h2>Reference</h2>
-
-	<h3>Configuration options</h3>
+	<h2>Configuration options</h2>
 	<g2:no_escape>$[docapi.RenderProperties()]</g2:no_escape>
-	
-<!--	<h3>Script includes</h3>
-	<g2:no_escape>$[docapi.RenderScriptIncludes()]</g2:no_escape>
-	-->
 	
 	<h2>License</h2>
 	<g2:no_escape>$[docapi.RenderCopyright(2021,'Sascha Wildgrube')]</g2:no_escape>
@@ -71,7 +64,7 @@
 	
 	<h2>Release Notes</h2>
 
-	<h3>1.0.0 - 2021-TODO</h3>
+	<h3>1.0.0 - 2021-09-09</h3>
 	<p>First baselined version</p>
 <span style="visibility: hidden;">_CUT_HERE_</span>
 </div>
@@ -82,13 +75,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-26 11:32:10</sys_created_on>
         <sys_id>ec2421a6db1438103c6c09c2ba96193b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>start</sys_name>
         <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy/>
         <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_ui_page_ec2421a6db1438103c6c09c2ba96193b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-07 15:10:42</sys_updated_on>
+        <sys_updated_on>2021-09-09 08:50:37</sys_updated_on>
     </sys_ui_page>
 </record_update>
