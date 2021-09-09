@@ -3,77 +3,92 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">5c664ec01baafc50577f43b5bb4bcb1e</list_id>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
-            <sys_id>68664ec01baafc50577f43b5bb4bcb1f</sys_id>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>4ca3b6681bee3090577f43b5bb4bcbba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_created_on</element>
-            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">5c664ec01baafc50577f43b5bb4bcb1e</list_id>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
-            <sys_id>e8664ec01baafc50577f43b5bb4bcb1f</sys_id>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>c0a3b6681bee3090577f43b5bb4bcbbb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>state</element>
-            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">5c664ec01baafc50577f43b5bb4bcb1e</list_id>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
-            <sys_id>6c664ec01baafc50577f43b5bb4bcb1f</sys_id>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>44a3b6681bee3090577f43b5bb4bcbbb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assignment_group</element>
-            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">5c664ec01baafc50577f43b5bb4bcb1e</list_id>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
-            <sys_id>ec664ec01baafc50577f43b5bb4bcb1f</sys_id>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>c4a3b6681bee3090577f43b5bb4bcbbb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>x_snc_selfcare_pattern_hash</element>
-            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">5c664ec01baafc50577f43b5bb4bcb1e</list_id>
+            <element>description</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
-            <sys_id>60664ec01baafc50577f43b5bb4bcb20</sys_id>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>48a3b6681bee3090577f43b5bb4bcbbb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>x_snc_selfcare_pattern_hash</element>
+            <list_id display_value="incident" element="NULL" name="incident" parent="NULL" relationship="NULL" sys_domain="global" view="430586801baafc50577f43b5bb4bcbc7">cca3b6681bee3090577f43b5bb4bcbb9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
+            <sys_id>c8a3b6681bee3090577f43b5bb4bcbbb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -87,10 +102,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-09-07 15:56:01</sys_created_on>
+            <sys_created_on>2021-09-09 08:30:39</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5c664ec01baafc50577f43b5bb4bcb1e</sys_id>
+            <sys_id>cca3b6681bee3090577f43b5bb4bcbb9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>incident</sys_name>
             <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
@@ -98,7 +113,7 @@
             <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
             <sys_update_name>sys_ui_list_incident_SelfCare</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-09-07 15:56:01</sys_updated_on>
+            <sys_updated_on>2021-09-09 08:30:39</sys_updated_on>
             <sys_user/>
             <view display_value="Selfcare" name="SelfCare">430586801baafc50577f43b5bb4bcbc7</view>
             <view_name/>

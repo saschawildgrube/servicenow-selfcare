@@ -39,7 +39,24 @@
 	}
 	
 	Debug('START');
+
 	
+	var aExceptions = [
+		'"referrerpolicy" is not defined',
+		'devstudio_config.xml'
+		];
+	
+	function ContainsException(strMessage)
+	{
+		for (var nException = 0; nException < aExceptions.length; nException++)
+		{
+			if (strMessage.indexOf(aExceptions[nException]) != -1)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 	
 	// 1. Scan the logs
 	
@@ -51,8 +68,13 @@
 	GlideRecordQuery(grSysLog);
 	while (grSysLog.next())
 	{
-		var strPatternHash = MakeLogPatternHash(grSysLog);
-		patterns[strPatternHash] = Clone(grSysLog);
+		var strMessage = GetStringValue(grSysLog.message);
+		
+		if (ContainsException(strMessage) == false)
+		{
+			var strPatternHash = MakeLogPatternHash(grSysLog);
+			patterns[strPatternHash] = Clone(grSysLog);
+		}
 	}
 
 	// 2. Create incidents
@@ -107,13 +129,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-27 15:47:13</sys_created_on>
         <sys_id>dc17277adb5cfc103c6c09c2ba96195f</sys_id>
-        <sys_mod_count>41</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>ExecuteLogScan</sys_name>
         <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_script_include_dc17277adb5cfc103c6c09c2ba96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-08 15:27:05</sys_updated_on>
+        <sys_updated_on>2021-09-09 08:40:06</sys_updated_on>
     </sys_script_include>
 </record_update>
