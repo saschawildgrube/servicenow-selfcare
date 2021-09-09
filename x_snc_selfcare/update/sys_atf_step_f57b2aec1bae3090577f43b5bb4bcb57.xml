@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Run Server Side Validation Script</description>
+        <display_name>Run Server Side Script</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <snapshot/>
+        <step_config display_value="Run Server Side Script">41de4a935332120028bc29cac2dc349a</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 07:56:00</sys_created_on>
+        <sys_id>f57b2aec1bae3090577f43b5bb4bcb57</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Run Server Side Script</sys_name>
+        <sys_package display_value="SelfCare" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</sys_scope>
+        <sys_update_name>sys_atf_step_f57b2aec1bae3090577f43b5bb4bcb57</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 08:28:52</sys_updated_on>
+        <table/>
+        <test display_value="SelfCare - ExecuteLogScan">4a5b66ec1bae3090577f43b5bb4bcb6d</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=f57b2aec1bae3090577f43b5bb4bcb57"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f57b2aec1bae3090577f43b5bb4bcb57</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 07:56:00</sys_created_on>
+        <sys_id>acbbe6ec1bae3090577f43b5bb4bcbe9</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 08:28:52</sys_updated_on>
+        <value>(function(outputs, steps, stepResult, assertEqual)&#13;
+{&#13;
+	var GlideRecordInsert = x_snc_devtools.GlideRecordInsert;&#13;
+	var GlideRecordDelete = x_snc_devtools.GlideRecordDelete;&#13;
+	var GetRecord = x_snc_devtools.GetRecord;&#13;
+	var IsValidSysId = x_snc_devtools.IsValidSysId;&#13;
+	&#13;
+	var test = new x_snc_devtools.TestAPI(outputs, steps, stepResult, assertEqual);&#13;
+	&#13;
+	test.SetResult(true);&#13;
+	&#13;
+	var strMessage = '_ATF_SELFCARE_\nThis is a test!';&#13;
+&#13;
+	&#13;
+	test.Log('Creating entry in syslog...');&#13;
+	var grSysLog = new GlideRecord('syslog');&#13;
+	grSysLog.initialize();&#13;
+	grSysLog.source = 'Evaluator';&#13;
+	grSysLog.message = strMessage;&#13;
+	grSysLog.level = 'Warning';&#13;
+	var strSysLogSysId = GlideRecordInsert(grSysLog);&#13;
+	&#13;
+	if (IsValidSysId(strSysLogSysId) == false)&#13;
+	{&#13;
+		test.Log('FAILED: Creating log entry failed.');&#13;
+		test.SetResult(false);&#13;
+		return test.GetResult();	&#13;
+	}&#13;
+	&#13;
+	// Execute twice and check if the result is exactly one incident&#13;
+	test.Log('Running ExecuteLogScan twice...');&#13;
+	ExecuteLogScan();&#13;
+	ExecuteLogScan();&#13;
+	&#13;
+	test.Log('Cleaning up the log entry (as it will not be cleaned up by ATF)');&#13;
+	var grSysLog = GetRecord('syslog',strSysLogSysId);&#13;
+	GlideRecordDelete(grSysLog);&#13;
+	&#13;
+	&#13;
+	test.Log('Checking resulting incidents...');&#13;
+	var grIncident = new GlideRecord('incident');&#13;
+	grIncident.addQuery('description','CONTAINS',strMessage);&#13;
+	grIncident.query();&#13;
+	&#13;
+	if (grIncident.getRowCount() != 1)&#13;
+	{&#13;
+		test.Log('FAILED: Did not find exactly ONE incident.');&#13;
+		test.SetResult(false);&#13;
+		return test.GetResult();	&#13;
+		&#13;
+	}&#13;
+	&#13;
+	test.Log('PASSED');&#13;
+	return test.GetResult();&#13;
+	&#13;
+})(outputs, steps, stepResult, assertEqual);</value>
+        <variable display_value="">989d9e235324220002c6435723dc3484</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_atf_step</document>
+        <document_key>f57b2aec1bae3090577f43b5bb4bcb57</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 07:56:00</sys_created_on>
+        <sys_id>e4bbe6ec1bae3090577f43b5bb4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 07:56:00</sys_updated_on>
+        <value>3.1</value>
+        <variable display_value="">42f2564b73031300440211d8faf6a777</variable>
+    </sys_variable_value>
+</record_update>

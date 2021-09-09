@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_selfcare.AppGetDependencies</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Retrieves information about the app's dependencies to other apps and required versions.</description>
+        <name>AppGetDependencies</name>
+        <script><![CDATA[function AppGetDependencies()
+{
+	return [
+		{
+			name: 'DevTools',
+			version: '1.22.0',
+			url: 'https://github.com/saschawildgrube/servicenow-devtools/',
+			website_url: 'https://www.wildgrube.com/servicenow-devtools'
+		}
+	];
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-09 11:07:49</sys_created_on>
+        <sys_id>9a9793a01b627090577f43b5bb4bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AppGetDependencies</sys_name>
+        <sys_package display_value="SelfCare" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</sys_scope>
+        <sys_update_name>sys_script_include_9a9793a01b627090577f43b5bb4bcbaf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-09 11:07:49</sys_updated_on>
+    </sys_script_include>
+</record_update>
