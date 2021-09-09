@@ -11,16 +11,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-09-08 13:42:45</sys_created_on>
         <sys_id>ce4136901baabc505331b8449b4bcbed</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_snc_selfcare.assignment_group</sys_name>
         <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy/>
         <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_properties_ce4136901baabc505331b8449b4bcbed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-08 13:50:48</sys_updated_on>
+        <sys_updated_on>2021-09-09 14:16:37</sys_updated_on>
         <type>string</type>
-        <value>0a52d3dcd7011200f2d224837e6103f2</value>
+        <value/>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=ce4136901baabc505331b8449b4bcbed"/>
