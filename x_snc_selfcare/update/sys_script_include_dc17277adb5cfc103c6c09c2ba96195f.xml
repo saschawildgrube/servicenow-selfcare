@@ -103,8 +103,15 @@
 				+pattern['message']+"\n"
 				+"_________________\n"
 				+x_snc_devtools.GetInstanceRecordURL('syslog',pattern.sys_id)+"\n";
-			GlideRecordInsert(grIncident);
-			Log('Added new incident for pattern hash "'+strPatternHash+'":\n'+RenderValue(grIncident,true));
+			var strIncidentSysId = GlideRecordInsert(grIncident);
+			if (strIncidentSysId == false)
+			{
+				Log('Failed to add new incident for pattern hash:\n'+strPatternHash);
+			}
+			else
+			{
+				Log('Added new incident:\n'+RenderValue(grIncident,true));
+			}
 
 		}
 		else
@@ -119,13 +126,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-27 15:47:13</sys_created_on>
         <sys_id>dc17277adb5cfc103c6c09c2ba96195f</sys_id>
-        <sys_mod_count>44</sys_mod_count>
+        <sys_mod_count>45</sys_mod_count>
         <sys_name>ExecuteLogScan</sys_name>
-        <sys_package display_value="SelfCare" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
+        <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy>read</sys_policy>
-        <sys_scope display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</sys_scope>
+        <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_script_include_dc17277adb5cfc103c6c09c2ba96195f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-09-09 08:43:30</sys_updated_on>
+        <sys_updated_on>2021-09-13 14:33:35</sys_updated_on>
     </sys_script_include>
 </record_update>
