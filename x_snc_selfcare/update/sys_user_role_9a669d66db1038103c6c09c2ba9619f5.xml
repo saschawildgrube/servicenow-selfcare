@@ -16,9 +16,9 @@
         <sys_id>9a669d66db1038103c6c09c2ba9619f5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_selfcare.admin</sys_name>
-        <sys_package display_value="SelfCare" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
+        <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy/>
-        <sys_scope display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</sys_scope>
+        <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_user_role_9a669d66db1038103c6c09c2ba9619f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-05-26 10:30:39</sys_updated_on>

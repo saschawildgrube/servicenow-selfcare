@@ -33,7 +33,7 @@
     </sys_script_include>
     <sys_update_version action="INSERT_OR_UPDATE">
         <action>DELETE</action>
-        <application display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</application>
+        <application display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</application>
         <file_path/>
         <instance_id>027b763fdb383810601a11f84896197c</instance_id>
         <instance_name>empswildgrubedevorlando</instance_name>
@@ -76,10 +76,10 @@
         <sys_metadata>12af398c1b6afc50577f43b5bb4bcbf1</sys_metadata>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>AppGetDependencies</sys_name>
-        <sys_package display_value="SelfCare" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
+        <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_parent/>
         <sys_policy/>
-        <sys_scope display_value="SelfCare">55f06f5fdb336090bc44d844ca961971</sys_scope>
+        <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_scope_delete display_value="">618e1ec8acf94b4a8c1db065e06248b9</sys_scope_delete>
         <sys_update_name>sys_script_include_12af398c1b6afc50577f43b5bb4bcbf1</sys_update_name>
         <sys_update_version display_value="sys_script_include_12af398c1b6afc50577f43b5bb4bcbf1">a8d046cc1b6afc50577f43b5bb4bcb81</sys_update_version>
