@@ -8,20 +8,22 @@
         <description>Installs the SelfCare application.</description>
         <name>AppInstall</name>
         <script><![CDATA[function AppInstall()
-{
+{	
+	var installer = new x_snc_devtools.InstallerAPI(x_snc_devtools.GetAppName('x_snc_selfcare'));
 	
+	return installer.Finish();
 }]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-26 10:52:06</sys_created_on>
         <sys_id>f25b95aedb5038103c6c09c2ba9619c3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>AppInstall</sys_name>
         <sys_package display_value="SelfCare WORK IN PROGRESS" source="x_snc_selfcare">55f06f5fdb336090bc44d844ca961971</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="SelfCare WORK IN PROGRESS">55f06f5fdb336090bc44d844ca961971</sys_scope>
         <sys_update_name>sys_script_include_f25b95aedb5038103c6c09c2ba9619c3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-05-26 10:52:06</sys_updated_on>
+        <sys_updated_on>2024-01-16 09:36:14</sys_updated_on>
     </sys_script_include>
 </record_update>
