@@ -10,8 +10,7 @@
         <mugshots_cache_json/>
         <notes/>
         <order>1</order>
-        <snapshot/>
-        <step_config display_value="DevTools - Check scoped app dependency">c3f56886db3da490ba15a353059619ff</step_config>
+        <step_config display_value="DevTools - Check app dependency">c3f56886db3da490ba15a353059619ff</step_config>
         <sys_class_name>sys_atf_step</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-05-26 10:40:52</sys_created_on>

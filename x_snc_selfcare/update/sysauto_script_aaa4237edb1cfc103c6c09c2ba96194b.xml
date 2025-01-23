@@ -5,6 +5,7 @@
         <condition/>
         <conditional>false</conditional>
         <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
         <name>SelfCare - Log Scan</name>
         <offset/>
         <offset_type/>
