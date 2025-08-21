@@ -6,7 +6,9 @@
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
+        <mobile_callable>false</mobile_callable>
         <name>Log</name>
+        <sandbox_callable>false</sandbox_callable>
         <script><![CDATA[function Log(strText)
 {
 	x_snc_devtools.Log('SelfCare: '+strText);
@@ -23,5 +25,6 @@
         <sys_update_name>sys_script_include_6da99d6adb5038103c6c09c2ba961908</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2021-05-26 10:44:47</sys_updated_on>
+        <x_snc_devtools_sys_ui_script/>
     </sys_script_include>
 </record_update>
